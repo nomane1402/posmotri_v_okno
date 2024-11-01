@@ -195,7 +195,8 @@ fieldset {
 }
 
 .more-button {
-  width: 387.8px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .content__details {
@@ -206,7 +207,7 @@ fieldset {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -236,7 +237,6 @@ fieldset {
 }
 
 .content__list-item:focus {
-  
   border: none;
 }
 
@@ -270,19 +270,24 @@ fieldset {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__video-card-description-container {
+  width: 200px;
   flex: 1;
 }
 
-.content__video-card-title{
+.content__video-card-title {
   text-transform: uppercase;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
   text-align: left;
+  text-overflow: ellipsis; /*многоточие*/
+  white-space: nowrap; /*чтоб многоточие работало*/
+  overflow: hidden; /*чтоб многоточие работало*/
 }
 
 .content__video-card-description {
